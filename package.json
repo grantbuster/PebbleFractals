@@ -1,0 +1,27 @@
+{
+    "author": "gbuster",
+    "dependencies": {},
+    "keywords": [],
+    "name": "fractal_js_02",
+    "pebble": {
+        "displayName": "Fractal_JS_02",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "rocky",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt",
+            "chalk",
+            "diorite",
+            "emery"
+        ],
+        "uuid": "1b7fc284-edf1-429f-83c1-70d2a4868820",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
