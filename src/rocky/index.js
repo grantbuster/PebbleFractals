@@ -30,7 +30,7 @@ function drawHand(ctx, cx, cy, angle, length, width) {
 
 function drawFractHand(N, ctx, s_xy, m_xy, h_xy, hms_angle, hms_len, width) {
   
-  var len_mult=0.8;
+  var len_mult=0.9;
     
   var h_len = hms_len[0];
   var m_len = hms_len[1];
@@ -154,18 +154,18 @@ rocky.on('draw', function(event) {
 	// ================================================================================
 	
 	// Draw a full circle outline
+	ctx.strokeStyle = 'white';
+  ctx.lineWidth = 4;
+	ctx.beginPath();
+	ctx.arc(w/2, h/2, w/50, 0, 2 * Math.PI, false);
+	ctx.stroke();
+	// Draw a full circle outline
 	ctx.strokeStyle = 'black';
-  ctx.lineWidth = 3;
+  ctx.lineWidth = 5;
 	ctx.beginPath();
 	ctx.arc(w/2, h/2, w/150, 0, 2 * Math.PI, false);
 	ctx.stroke();
 	
-	// Draw a full circle outline
-	ctx.strokeStyle = 'white';
-  ctx.lineWidth = 2;
-	ctx.beginPath();
-	ctx.arc(w/2, h/2, w/50, 0, 2 * Math.PI, false);
-	ctx.stroke();
 	
 	// Draw a full circle outline
 	//ctx.strokeStyle = 'white';
